@@ -27,7 +27,7 @@ else:
 
       time.sleep(1)
       print(3**i)
-      #pid, status = os.waitpid(pid, 0)
-      #print("wait returned, pid = %d, status = %d" % (pid, status))
+      pid, status = os.waitpid(pid, 0)
+      print("wait returned, pid = %d, status = %d" % (pid, status))
 
     print('I am the parent')
