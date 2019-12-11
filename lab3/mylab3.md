@@ -48,19 +48,19 @@
 ## Изучим процессы запущенные в системе
 
 
-ps -eF
+##ps -eF
 
 ![](screnshots/ps-ef.png)
 
-ps rx 
+##ps rx 
 
 ![](screnshots/psrx.png)
 
-ps -e --forest
+##ps -e --forest
 
 ![](screnshots/psforest.png)
 
-ps -efL
+##ps -efL
 
 ![](screnshots/ps-efl.png)
 
@@ -180,10 +180,7 @@ du -sh  ~/myfiles
 ![](screnshots/cpu.png)
 * запишите top 3 процессов загружающих память 
 ![](screnshots/mem.png)
-* запустите утилиту atop как сервис через systemd
 * запустите dd на генерацию файла размер в 3 гигабайта
-  dd of=file bs=1 count=0 seek=3G
-* удалите сгенеренный файл
-* через atop скажите какой  pid был у процесса
+  * dd of=file bs=1 count=0 seek=3G
 * Проанализируйте нагрузку на диск через утилиты  iotop и iostat
-![](screnshots/iostat.png)
+![](screnshots/iotop.png)
